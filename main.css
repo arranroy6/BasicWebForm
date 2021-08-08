@@ -1,0 +1,44 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  padding: 5%;
+  width: 100%;
+  min-height: 100vh;
+  font-family: Helvetica;
+}
+
+.form_input{
+  width: 70%;
+  border-radius: 5px;
+  padding: 1%;
+}
+
+.form_sections{
+  /* creating a 2 col setup */
+  width: 50%;
+  float: left;
+  padding: 1%;
+}
+
+#description{
+  width: 122%;
+}
+
+#submit_section{
+  padding-top: 5%;
+}
+
+#submit_button{
+  background-color: #00cc00;
+  color: white;
+}
+/* when the screen size becomes too small, it changes from a 2 col setup to 1 col */
+@media screen and (max-width: 480px) {
+  .form_sections{
+    width: 100%;
+  }
+}

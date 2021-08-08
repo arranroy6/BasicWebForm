@@ -2,51 +2,52 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css">
     <title>Basic Web Form</title>
   </head>
   <body>
-    <div class="form">
-      <form class="" action="index.html" method="post">
+    <div class="content">
+      <form class="detail_form" action="index.html" method="post">
         <div class="form_sections">
-          <label for="firstname" class="form_label">Firstname</label>
+          <label for="firstname" class="form_label">Firstname</label><br>
           <input type="text" name="firstname" class="form_input" placeholder="Please enter firstname">
         </div>
         <div class="form_sections">
-          <label for="surname" class="form_label">Surname</label>
+          <label for="surname" class="form_label">Surname</label><br>
           <input type="text" name="surname" class="form_input" placeholder="Please enter surname">
         </div>
         <div class="form_sections">
-          <label for="email" class="form_label">Email</label>
+          <label for="email" class="form_label">Email</label><br>
           <input type="text" name="email" class="form_input" placeholder="Please enter email">
         </div>
         <div class="form_sections">
-          <label for="telephone" class="form_label">Telephone Number</label>
+          <label for="telephone" class="form_label">Telephone Number</label><br>
           <input type="text" name="telephone" class="form_input" placeholder="Please enter telephone number">
         </div>
         <div class="form_sections">
-          <label for="address1" class="form_label">Address 1</label>
+          <label for="address1" class="form_label">Address 1</label><br>
           <input type="text" name="address1" class="form_input" placeholder="Please enter address 1">
         </div>
         <div class="form_sections">
-          <label for="address2" class="form_label">Address 2</label>
+          <label for="address2" class="form_label">Address 2</label><br>
           <input type="text" name="address2" class="form_input" placeholder="Please enter address 2">
         </div>
         <div class="form_sections">
-          <label for="city" class="form_label">City</label>
+          <label for="city" class="form_label">City</label><br>
           <input type="text" name="city" class="form_input" placeholder="Please enter city">
         </div>
         <div class="form_sections">
-          <label for="county" class="form_label">County</label>
+          <label for="county" class="form_label">County</label><br>
           <input type="text" name="county" class="form_input" placeholder="Please enter county">
         </div>
         <div class="form_sections">
-          <label for="postcode" class="form_label">Postcode</label>
+          <label for="postcode" class="form_label">Postcode</label><br>
           <input type="text" name="postcode" class="form_input" placeholder="Please enter postcode">
         </div>
         <div class="form_sections">
-          <label for="country" class="form_label">Country</label>
+          <label for="country" class="form_label">Country</label><br>
           <!-- country list taken from https://gist.github.com/danrovito/977bcb97c9c2dfd3398a -->
-          <select id="country" name="country" class="form-sections">
+          <select id="country" name="country" class="form_input">
               <option value="Afghanistan">Afghanistan</option>
               <option value="Åland Islands">Åland Islands</option>
               <option value="Albania">Albania</option>
@@ -293,16 +294,16 @@
               <option value="Zimbabwe">Zimbabwe</option>
             </select>
         </div>
+        <div class="form_sections" id="description">
+          <label for="description" class="form_label">Description</label><br>
+          <textarea class="form_input" name="description" rows="8" cols="60"></textarea>
+        </div
         <div class="form_sections">
-          <label for="description" class="form_label">Description</label>
-          <textarea class="form_input" name="description" rows="8" cols="80"></textarea>
-        </div>
-        <div class="form_sections">
-          <label for="file" class="form_label">Insert a file</label>
+          <label for="file" class="form_label">Your CV</label><br>
           <input type="file" name="file" class="form_input">
         </div>
-        <div class="form_sections">
-          <button type="button" name="button" class="submit">Submit</button>
+        <div class="form_sections" id="submit_section">
+          <button type="button" id="submit_button" name="button" class="form_input">Submit</button>
         </div>
       </form>
     </div>
