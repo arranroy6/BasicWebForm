@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -7,7 +6,7 @@
   </head>
   <body>
     <div class="content">
-      <form class="detail_form" action="index.html" method="post">
+      <form class="detail_form" action="webForm.php" method="POST">
         <div class="form_sections">
           <label for="firstname" class="form_label">Firstname</label><br>
           <input type="text" name="firstname" class="form_input" placeholder="Please enter firstname">
@@ -303,7 +302,7 @@
           <input type="file" name="file" class="form_input">
         </div>
         <div class="form_sections" id="submit_section">
-          <button type="button" id="submit_button" name="button" class="form_input">Submit</button>
+          <button type="button" id="submit_button" name="submit" class="form_input">Submit</button>
         </div>
       </form>
     </div>

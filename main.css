@@ -17,6 +17,10 @@ body{
   padding: 1%;
 }
 
+.form_input:focus{
+  background-color: lightblue;
+}
+
 .form_sections{
   /* creating a 2 col setup */
   width: 50%;
