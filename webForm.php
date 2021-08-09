@@ -1,4 +1,5 @@
 <!-- php has not been tested, as i did not have access to a live server -->
+<!-- it is likely that after testing, there would be changes that need to be made to the code -->
 
 <?php
 $email_sent = false;
