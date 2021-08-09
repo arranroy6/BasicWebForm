@@ -1,3 +1,5 @@
+<!-- php has not been tested, as i did not have access to a live server -->
+
 <?php
 $email_sent = false;
 
@@ -27,12 +29,15 @@ if (isset($_POST['submit']))
       $subject = 'WebForm Email';
       $message = 'Email from: ' . $firstname . ' ' . $surname . ': ' . \n\n . $telephone . \n . $address1 . \n . $address2 . \n . $city . \n . $county . \n . $postcode . \n . $country . \n . $description . \n . $file;
       $headers = 'From: ' . $mailFrom;
+      // send email
       mail($mailTo, $subject, $message, $headers);
 
+      // set boolean value to show if email was successful to true
       $email_sent = true;
     }
   }
 
+  // if email was not successful, show alert saying input is invalid
   if (!$email_sent)
   {
     echo <script>alert('Input is invalid. Please make sure your firstname and email address are correct. ')</script>

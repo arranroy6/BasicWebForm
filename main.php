@@ -6,7 +6,9 @@
   </head>
   <body>
     <div class="content">
+      <!-- creating form -->
       <form class="detail_form" action="webForm.php" method="POST">
+        <!-- taking in information in text boxes -->
         <div class="form_sections">
           <label for="firstname" class="form_label">Firstname</label><br>
           <input type="text" name="firstname" class="form_input" placeholder="Please enter firstname">
@@ -43,6 +45,7 @@
           <label for="postcode" class="form_label">Postcode</label><br>
           <input type="text" name="postcode" class="form_input" placeholder="Please enter postcode">
         </div>
+        <!-- taking country as drop down menu -->
         <div class="form_sections">
           <label for="country" class="form_label">Country</label><br>
           <!-- country list taken from https://gist.github.com/danrovito/977bcb97c9c2dfd3398a -->
@@ -301,6 +304,7 @@
           <label for="file" class="form_label">Your CV</label><br>
           <input type="file" name="file" class="form_input">
         </div>
+        <!-- submit button -->
         <div class="form_sections" id="submit_section">
           <button type="button" id="submit_button" name="submit" class="form_input">Submit</button>
         </div>

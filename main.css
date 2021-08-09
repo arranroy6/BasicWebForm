@@ -1,22 +1,27 @@
+/* removing margins and padding */
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* set padding for space, and width/height that adjust to viewport */
 body{
   padding: 5%;
   width: 100%;
   min-height: 100vh;
+  /* set font */
   font-family: Helvetica;
 }
 
+/* set values for input boxes */
 .form_input{
   width: 70%;
   border-radius: 5px;
   padding: 1%;
 }
 
+/* highlight input fields when they are active */
 .form_input:focus{
   background-color: lightblue;
 }
